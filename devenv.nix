@@ -11,7 +11,10 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  packages = [
+    pkgs.git
+    pkgs.cmake # libz-ng-sys (pingora compression deps)
+  ];
 
   # https://devenv.sh/languages/
   languages.rust.enable = true;

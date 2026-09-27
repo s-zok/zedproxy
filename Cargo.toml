@@ -2,5 +2,17 @@
 name = "zedproxy"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "Local reverse proxy rewriting reasoning_effort for Zed compaction requests"
 
 [dependencies]
+pingora = { version = "0.9", features = ["proxy", "rustls"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+url = "2"
+thiserror = "2"
+bytes = "1"
+async-trait = "0.1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-log = "0.2"
+time = { version = "0.3", features = ["formatting"] }
