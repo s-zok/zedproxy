@@ -1,0 +1,10 @@
+{
+  "lsp": {
+    "rust-analyzer": {
+      "binary": {
+        "path": "devenv",
+        "arguments": ["shell", "rust-analyzer"]
+      }
+    }
+  }
+}
